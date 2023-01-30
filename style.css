@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    scroll-behavior: smooth;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(117, 151, 167);
+}
+
+a:active{
+    color: rgb(45, 111, 155);
+}
+
+a h3:hover{
+    color: rgb(117, 151, 167);
+}
+
+a h3:active{
+    color: rgb(45, 111, 155);
+}
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.nav{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 3px 3px rgb(214, 214, 214);
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav img{
+    width: 35px;
+    margin-top: 5px;
+}
+
+.menu img{
+    height: 25px;
+    width: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.conteudo{
+    padding-top: 30px;
+    width: 370px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    box-shadow: 0 0 1em rgb(212, 212, 212);
+    background-color: white;
+}
+
+.conteudo img{
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteudo p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.conteudo h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+.conteudo2{
+    padding-top: 30px;
+    width: 380px;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid #dadada;
+    box-shadow: 0 0 1em rgb(212, 212, 212);
+    background-color: white;
+}
+
+.conteudo2 img{
+    width: 360px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.conteudo2 p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.conteudo2 h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    font-size: 26px;
+    line-height: 50px;
+    display: block;
+    width: 30px;
+    margin-left: 30px;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.menu a {
+    display: block;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 0;
+    background-color: white;
+}
+#toggle:checked + .menu {
+    display: block;
+}
+
+
+.perfil{
+    display: none;
+}
+.perfil h3{
+    padding-top: 15px;
+}
+
+.nav ul{
+    display: none;
+}
+
+.perfil2{
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #dadada;
+    box-shadow: 0 0 1em rgb(212, 212, 212);
+    background-color: white;
+    margin-top: 30px;
+}
+
+.perfil2 p{
+    text-align: left;
+    padding-left: 20px
+}
+
+.perfil2 img{
+    width: 220px;
+    padding: 20px;
+}
+
+@media screen and (min-width:900px) {
+    
+    .container{
+        width: 900px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #dadada;
+        box-shadow: 0 0 1em rgb(212, 212, 212);
+    }
+
+    .nav{
+        width: 900px;
+        margin: auto;
+
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav img{
+        width: 35px;
+        margin-top: 5px;
+    }
+
+    .conteudo{
+        margin: 30px;
+    }
+
+    .conteudo2{
+        margin-bottom: 30px;
+        width: 520px;
+    }
+
+    .conteudo2 img{
+        width: 500px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        position: fixed;
+        top: 0;
+        margin: 80px 0 0 570px;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid #dadada;
+        box-shadow: 0 0 1em rgb(212, 212, 212);
+    }
+
+    .perfil p{
+        text-align: left;
+        padding-left: 20px
+
+    }
+
+    .perfil img{
+        width: 220px;
+        padding: 20px;
+    }
+
+    .ckbox{
+        display: none;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    label{
+        display: none;
+    }
+}
